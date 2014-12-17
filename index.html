@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Welcome to Flickr - Photo Search</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<!-- flexbox layout -->
+<body class="flexlayout">
+
+<!-- create menu on the right nav. side -->
+<section class="menu slide-menu">
+<img id="logo" src="img/flickr.png" alt="cog1">
+
+<h2 class="menu-header">About Flickr</h2>
+<article class="menu-content">Flickr is an image hosting and video hosting website, and web services suite 
+that was created by Ludicorp.  In addition to being a popular website for users to share and embed personal photographs, 
+and effectively an online community</article>.
+<h2 class="menu-header">Flickr Search</h2>
+<article class="menu-content">This page will fetch the images from the flickr by utilizing their Api. Just write the 
+keyword in search box and then press search.</article>.
+
+</section>
+
+<!-- main Header start -->
+ <div class="page">
+<header class="hero">
+<div class="row center-xs"><h1 class="hero-headline">Flickr Search</h1></div>
+<div class="row center-xs"><p class="hero-copy">Welcome to Flickr - Photo Search!</p></div>
+</header>
+
+<!-- page wrap starts -->
+<div class="wrap">
+<a name="search"></a>
+<section class="page-section">
+
+
+<!-- flickr images search box -->
+<form>
+<input id="box" class="search" placeholder="enter keyword and then click on search.." required>
+<input class="button" title="show" onclick="showpics()" type="button" value="Search">
+
+<!-- display images -->
+<div class="lazy" id="images"></div>
+</form>
+</div></section>
+<!-- footer section -->
+<div>
+<footer class="page-footer">
+<div class="col-xs end"><a href="#top" class="link-top">⇪ back to top</a></div></footer>
+</div>
+<!-- Scripts added after the page elements -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script src="js/script.js"></script>
+
+ </body>
+ </html>
